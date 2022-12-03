@@ -1,4 +1,4 @@
-/* variables set below */
+/* color scheme variables */
 :root {
   --greyhound: #33393f;
   --crystal: #ffffff;
@@ -6,8 +6,7 @@
   --sunny: rgb(201, 241, 238);
 }
 
-
-
+/* styling for the doc */
 * {
   box-sizing: border-box;
 }
@@ -20,34 +19,37 @@ body {
 }
 
 
-/* navigation bar code below */
-
-header {
+/* navigation bar with flexbox */
+.flexbox {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
   flex-direction: row;
-  flex-wrap: wrap;
-  /* margin: 0px; */
   background-color: var(--greyhound);
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 0px;
+  padding-right: 30px;
 }
-
-/* #logo {
-  display: flex;
-  flex-direction: row;
-} */
 
 h1 {
   width: 25%;
   font-weight: 500;
-  color: var(--crystal);
+  color: var(--greyhound);
+  display: inline block;
+  text-align: right;
+  background-color: var(--crystal);
+  margin-left: 0px;
+  padding-right: 10px;
 }
 
+
 /* nav section code below */
-nav {
-  /* display: flex;
+.flexnav {
+  display: flex;
   justify-content: flex-end;
-  align-items: space-evenly;
-  width: 70%; */
-  padding: 10px;
+  align-items: center;
+ 
 
   @media (min-width: 600px) {
     padding: 20px;
@@ -55,14 +57,20 @@ nav {
 }
 
 nav ul {
+  display: flex;
   list-style-type: none;
   margin: 0px;
   padding: 0px;
+  align-items: center;
+  margin-right: 20px;
 }
 
 nav ul li {
-  display: inline-block;
-  margin-left: 25px;
+  margin-right: 20px;
+}
+
+#LinkedIn {
+  margin-right: 0px;
 }
 
 nav ul li a {
