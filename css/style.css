@@ -99,10 +99,34 @@ a:hover::before {
   background: linear-gradient(to right, var(--light) 40%, var(--sunny) 75%);
 }
 
+/* hero banner styling */
+.hero-banner {
+  display: flex;
+  height: 200px;
+  width: 100%;
+  margin-bottom: 25px;
+  background-image: url("../images/02-hero-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  justify-content: right;
+  align-items: flex-end;
+}
 
 
-
-
+#greeting h2 {
+  font-weight: 300;
+  color: var(--greyhound);
+  display: inline-block;
+  text-align: center;
+  background-color: var(--crystal);
+  padding-right: 5px;
+  padding-left: 5px;
+  padding-bottom: 1px;
+  padding-top: 1px;
+  border: 30px;
+  margin-bottom: 30px;
+  margin-right: 45px;
+}
 
 
 
