@@ -71,11 +71,6 @@ nav ul li {
   margin-left: 25px;
 }
 
-nav ul li a:hover {
-  background-color: rgb(54, 54, 54);
-}
-
-
 nav ul li a {
   color: #ffffff;
   text-decoration: none;
@@ -92,6 +87,20 @@ a::before {
   left: -5px;
   background-color: #ffffff;
 }
+
+nav ul li a:hover {
+  color: rgb(60, 128, 128);
+
+}
+
+a:hover::before {
+  background-color: rgb(60, 128, 128);
+}
+
+
+
+
+
 
 
 
