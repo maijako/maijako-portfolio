@@ -1,16 +1,10 @@
 /* variables set below */
-/* :root {
-  --calm: #33393f;
-  --bright: limegreen;
-  --mellow: palegreen;
-  --highlight: green;
+:root {
+  --greyhound: #33393f;
+  --crystal: #ffffff;
+  --light: rgb(151, 153, 151);
+  --sunny: rgb(201, 241, 238);
 }
-
-::selection {
-  background-color: var(--bright);
-  color: var(--calm);
-} */
-
 
 
 
@@ -33,7 +27,7 @@ header {
   flex-direction: row;
   flex-wrap: wrap;
   /* margin: 0px; */
-  background-color: #1b1b1b;
+  background-color: var(--greyhound);
 }
 
 /* #logo {
@@ -44,7 +38,7 @@ header {
 h1 {
   width: 25%;
   font-weight: 500;
-  color: #ffffff;
+  color: var(--crystal);
 }
 
 /* nav section code below */
@@ -72,7 +66,7 @@ nav ul li {
 }
 
 nav ul li a {
-  color: #ffffff;
+  color: var(--crystal);
   text-decoration: none;
   border-bottom: thick;
   position: relative; 
@@ -85,16 +79,16 @@ a::before {
   right: -5px;
   bottom: -4px;
   left: -5px;
-  background-color: #ffffff;
+  background-color: var(--crystal);
 }
 
 nav ul li a:hover {
-  color: rgb(60, 128, 128);
+  color: var(--light);
 
 }
 
 a:hover::before {
-  background: linear-gradient(to right, rgb(60, 128, 128) 40%, rgb(142, 204, 204) 75%);
+  background: linear-gradient(to right, var(--light) 40%, var(--sunny) 75%);
 }
 
 
