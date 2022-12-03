@@ -94,7 +94,7 @@ nav ul li a:hover {
 }
 
 a:hover::before {
-  background-color: rgb(60, 128, 128);
+  background: linear-gradient(to right, rgb(60, 128, 128) 40%, rgb(142, 204, 204) 75%);
 }
 
 
