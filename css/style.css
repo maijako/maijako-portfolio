@@ -1,3 +1,15 @@
+/* variables set below */
+:root {
+  --calm: #33393f;
+  --bright: limegreen;
+  --mellow: palegreen;
+  --highlight: green;
+}
+
+::selection {
+  background-color: var(--bright);
+  color: var(--calm);
+}
 * {
   box-sizing: border-box;
 }
@@ -8,6 +20,56 @@ body {
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   line-height: 1.5;
 }
+
+
+/* navigation bar code below */
+
+header {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  /* margin: 0px; */
+  background-color: rgb(34, 158, 96);
+}
+
+#logo {
+  display: flex;
+  flex-direction: row;
+}
+
+#logo h1 {
+  width: 25%;
+  font-weight: 500;
+}
+
+/* nav section code below */
+nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: space-evenly;
+  width: 70%;
+
+}
+
+nav ul {
+  list-style-type: none;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-left: 25px;
+}
+
+nav ul li a:hover {
+  background-color: palegreen;
+}
+
+
+nav ul li a {
+  color: var(--calm);
+}
+
+
 
 h1,
 h2,
