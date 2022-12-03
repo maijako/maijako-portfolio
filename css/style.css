@@ -1,5 +1,5 @@
 /* variables set below */
-:root {
+/* :root {
   --calm: #33393f;
   --bright: limegreen;
   --mellow: palegreen;
@@ -9,7 +9,11 @@
 ::selection {
   background-color: var(--bright);
   color: var(--calm);
-}
+} */
+
+
+
+
 * {
   box-sizing: border-box;
 }
@@ -29,30 +33,37 @@ header {
   flex-direction: row;
   flex-wrap: wrap;
   /* margin: 0px; */
-  background-color: rgb(34, 158, 96);
+  background-color: #1b1b1b;
 }
 
-#logo {
+/* #logo {
   display: flex;
   flex-direction: row;
-}
+} */
 
-#logo h1 {
+h1 {
   width: 25%;
   font-weight: 500;
+  color: #ffffff;
 }
 
 /* nav section code below */
 nav {
-  display: flex;
+  /* display: flex;
   justify-content: flex-end;
   align-items: space-evenly;
-  width: 70%;
+  width: 70%; */
+  padding: 10px;
 
+  @media (min-width: 600px) {
+    padding: 20px;
+  }
 }
 
 nav ul {
   list-style-type: none;
+  margin: 0px;
+  padding: 0px;
 }
 
 nav ul li {
@@ -61,12 +72,25 @@ nav ul li {
 }
 
 nav ul li a:hover {
-  background-color: palegreen;
+  background-color: rgb(54, 54, 54);
 }
 
 
 nav ul li a {
-  color: var(--calm);
+  color: #ffffff;
+  text-decoration: none;
+  border-bottom: thick;
+  position: relative; 
+}
+
+a::before {
+  content: "";
+  position: absolute;
+  height: 2px;
+  right: 0px;
+  bottom: -4px;
+  left: 0px;
+  background-color: #ffffff;
 }
 
 
