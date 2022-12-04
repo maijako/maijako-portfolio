@@ -75,6 +75,7 @@ nav ul li a {
   position: relative; 
 }
 
+
 a::before {
   content: "";
   position: absolute;
@@ -85,9 +86,11 @@ a::before {
   background-color: var(--crystal);
 }
 
+
 nav ul li a:hover {
   color: var(--light);
 }
+
 
 a:hover::before {
   background: linear-gradient(to right, var(--light) 40%, var(--sunny) 75%);
@@ -119,18 +122,11 @@ a:hover::before {
   margin-right: 45px;
 }
 
+
 /* page wrapper styling */
 .page-wrapper {
   max-width: 1170px;
   margin: 0 auto;
-}
-
-/* about me section styling */
-#about {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
 }
 
 h2 {
@@ -140,11 +136,118 @@ h2 {
   font-size: x-large;
 }
 
+/* about me section styling */
+.page-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
 p {
   text-align: left;
   padding-left: 30px;
   border-left: solid var(--greyhound);
 }
+
+
+/* Work area styling */
+#workgrid {
+  padding-left: 30px;
+  border-left: solid var(--greyhound);
+  display: grid;
+  grid-template-rows: 100px 100px 100px 100px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+  "minecraft minecraft"
+  "minecraft minecraft"
+  "examlift upskill"
+  "prework refactor"
+}
+#minecraft {
+  grid-area: minecraft;
+  background-image: url("../images/english-adventures.png");
+}
+
+#examlift {
+  grid-area: examlift;
+  background-image: url("../images/02-portfolio-1.jpg");
+}
+
+#upskill {
+  grid-area: upskill;
+  background-image: url("../images/02-portfolio-2.jpg");
+}
+
+#prework {
+  grid-area: prework;
+  background-image: url("../images/02-portfolio-3.jpg");
+}
+
+#refactor {
+  grid-area: refactor;
+  background-image: url("../images/02-portfolio-4.jpg");
+}
+
+.workgridArea {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 5px;
+  cursor: pointer;
+  display: grid;
+  align-content: end;
+}
+/*footer styling */
+
+.details {
+  padding-left: 30px;
+  border-left: solid var(--greyhound);
+  align-items: center;
+  justify-content: space-between;
+}
+
+.details ul {
+  display: flex;
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.details ul li {
+  margin-right: 20px;
+}
+
+.details ul li a {
+  color: var(--greyhound);
+  text-decoration: none;
+  border-bottom: thick;
+  position: relative; 
+}
+
+.details ul li a::before {
+  content: "";
+  position: absolute;
+  height: 2px;
+  right: -5px;
+  bottom: -4px;
+  left: -5px;
+  background-color: var(--greyhound);
+}
+
+.details ul li a:hover {
+  color: var(--light);
+}
+
+.details ul li a:hover::before {
+  background: linear-gradient(to right, var(--light) 40%, var(--sunny) 75%);
+}
+
+
+
+
 
 h1,
 h2,
