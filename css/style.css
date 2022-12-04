@@ -32,6 +32,7 @@ body {
   padding-right: 30px;
 }
 
+
 h1 {
   font-weight: 500;
   color: var(--greyhound);
@@ -44,16 +45,15 @@ h1 {
 }
 
 
-/* nav section code below with */
+/* nav section code below*/
 .flexnav {
   display: flex;
   justify-content: flex-end;
   align-items: center;
  
-
-  @media (min-width: 600px) {
+  /* @media (min-width: 600px) {
     padding: 20px;
-  }
+  } */
 }
 
 nav ul {
@@ -141,4 +141,30 @@ h6 {
 
 p {
   margin: 0;
+}
+
+/* styling for mobile */
+@media only screen and (max-width: 600px) {
+  .flexbox {
+    flex-direction: column;
+    flex-wrap: wrap;
+    /* height: 30vh; */
+    padding-top: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+  }
+
+  h1 {
+    width: 100%;
+    text-align: center;
+    padding-right: 0px;
+    padding-left: 0px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  nav ul {
+    margin: 0px;
+    padding: 15px;
+  }
 }
