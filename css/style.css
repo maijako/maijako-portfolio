@@ -1,8 +1,8 @@
 
 /* Code:
 
-1. general doc styling elements
-2. set variables
+1. variables
+2. general styling
 3. navigation bar
 4. navigation links
 5. hero banner
@@ -13,11 +13,17 @@
 10. media query
 
 
+/* variables */
+:root {
+  --greyhound: #2e1902;
+  --crystal:  #f5e7bb;
+  --light: rgb(231, 143, 28);
+  --sunny: rgb(247, 236, 86);
+}
 
 /* general styling */
 * {
   box-sizing: border-box;
-
 }
 
 body {
@@ -28,15 +34,26 @@ body {
   height: 100%;
 }
 
-/* variables */
-:root {
-  --greyhound: #2e1902;
-  --crystal:  #f5e7bb;
-  --light: rgb(231, 143, 28);
-  --sunny: rgb(247, 236, 86);
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  color: var(--greyhound);
+}
+
+h1,
+h3,
+h4 {
+  background-color: var(--crystal);
 }
 
 
+p {
+  margin: 0;
+}
 
 /* navigation bar*/
 .flexbox {
@@ -124,8 +141,14 @@ nav ul li a:hover::before {
   background-image: url("../images/antelope-canyon.jpg");
   background-size: cover;
   background-position: center;
-  justify-content: right;
+  justify-content: space-between;
   align-items: flex-end;
+  
+  
+}
+
+img {
+  width: 150px;
 }
 
 #greeting h3 {
@@ -288,29 +311,6 @@ h2 {
 
 
 
-
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  margin: 0;
-  color: var(--greyhound);
-}
-
-h1,
-h3,
-h4 {
-  background-color: var(--crystal);
-}
-
-
-
-p {
-  margin: 0;
-}
 
 /* responsive screens */
 @media only screen and (max-width: 600px) {
