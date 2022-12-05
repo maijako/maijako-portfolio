@@ -31,9 +31,9 @@ body {
 /* variables */
 :root {
   --greyhound: #2e1902;
-  --crystal:  #f1ca46;
+  --crystal:  #f5e7bb;
   --light: rgb(231, 143, 28);
-  --sunny: rgb(231, 78, 40);
+  --sunny: rgb(247, 236, 86);
 }
 
 
@@ -228,7 +228,7 @@ h2 {
 }
 
 #workgrid a:hover {
-  border-color: var(--sunny);
+  border-color: var(--light);
 }
 
 .workgridArea {
@@ -240,15 +240,11 @@ h2 {
   cursor: pointer;
   display: grid;
   align-content: end;
-  border: solid var(--crystal);cdgit 
-}
+  border: solid var(--crystal);
+  }
+
 /*footer styling */
 
-/* .details {
-  align-items: center;
-  justify-content: space-evenly;
-  justify-items: space-evenly;
-} */
 
 .details ul {
   display: flex;
@@ -321,7 +317,6 @@ p {
   .flexbox {
     flex-direction: column;
     flex-wrap: wrap;
-    /* height: 30vh; */
     padding-top: 0px;
     padding-right: 0px;
     padding-bottom: 0px;
