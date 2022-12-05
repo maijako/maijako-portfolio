@@ -30,10 +30,10 @@ body {
 
 /* variables */
 :root {
-  --greyhound: #33393f;
-  --crystal: #ffffff;
-  --light: rgb(151, 153, 151);
-  --sunny: rgb(201, 241, 238);
+  --greyhound: #2e1902;
+  --crystal:  #f1ca46;
+  --light: rgb(231, 143, 28);
+  --sunny: rgb(231, 78, 40);
 }
 
 
@@ -198,6 +198,7 @@ h2 {
   left: 0px;
   background-color: var(--crystal);
   text-decoration: none;
+  color: var(--greyhound);
   padding: 10px;
 }
 
@@ -224,6 +225,10 @@ h2 {
 #refactor {
   grid-area: refactor;
   background-image: url("../images/02-portfolio-4.jpg");
+}
+
+#workgrid a:hover {
+  border-color: var(--sunny);
 }
 
 .workgridArea {
@@ -311,7 +316,7 @@ p {
   margin: 0;
 }
 
-/* styling for mobile */
+/* responsive screens */
 @media only screen and (max-width: 600px) {
   .flexbox {
     flex-direction: column;
