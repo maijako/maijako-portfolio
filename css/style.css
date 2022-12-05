@@ -1,14 +1,23 @@
-/* color scheme variables */
-:root {
-  --greyhound: #33393f;
-  --crystal: #ffffff;
-  --light: rgb(151, 153, 151);
-  --sunny: rgb(201, 241, 238);
-}
 
-/* styling for the doc */
+/* Code:
+
+1. general doc styling elements
+2. set variables
+3. navigation bar
+4. navigation links
+5. hero banner
+6. page wrapper
+7. about me
+8. portfolio
+9. footer
+10. media query
+
+
+
+/* general styling */
 * {
   box-sizing: border-box;
+
 }
 
 body {
@@ -16,10 +25,20 @@ body {
   padding: 0;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   line-height: 1.5;
+  height: 100%;
+}
+
+/* variables */
+:root {
+  --greyhound: #33393f;
+  --crystal: #ffffff;
+  --light: rgb(151, 153, 151);
+  --sunny: rgb(201, 241, 238);
 }
 
 
-/* navigation bar with flexbox */
+
+/* navigation bar*/
 .flexbox {
   display: flex;
   justify-content: space-between;
@@ -44,7 +63,7 @@ h1 {
 }
 
 
-/* nav section code below*/
+/* navigation links */
 .flexnav {
   display: flex;
   justify-content: flex-end;
@@ -76,7 +95,7 @@ nav ul li a {
 }
 
 
-a::before {
+nav ul li a::before {
   content: "";
   position: absolute;
   height: 2px;
@@ -92,7 +111,7 @@ nav ul li a:hover {
 }
 
 
-a:hover::before {
+nav ul li a:hover::before {
   background: linear-gradient(to right, var(--light) 40%, var(--sunny) 75%);
 }
 
@@ -127,6 +146,7 @@ a:hover::before {
 .page-wrapper {
   max-width: 1170px;
   margin: 0 auto;
+  max-height: 100%;
 }
 
 h2 {
@@ -142,31 +162,48 @@ h2 {
   justify-content: center;
   align-items: center;
   flex-direction: row;
+  padding-bottom: 40px;
+  
 }
 
-p {
-  text-align: left;
+.page-section h2{
+  flex-basis: 15%;
+}
+
+
+
+.bio, #workgrid, .details {
   padding-left: 30px;
   border-left: solid var(--greyhound);
+  width: 50vw;
 }
 
 
-/* Work area styling */
+/* Portfolio */
+
 #workgrid {
-  padding-left: 30px;
-  border-left: solid var(--greyhound);
   display: grid;
-  grid-template-rows: 100px 100px 100px 100px;
-  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 300px 300px 300px 300px;
+  grid-template-columns: 50% 50% ;
   grid-template-areas:
   "minecraft minecraft"
   "minecraft minecraft"
   "examlift upskill"
   "prework refactor"
 }
+
+.overlay{
+  position: absolute;
+  bottom: 10px;
+  left: 0px;
+  background-color: var(--crystal);
+  text-decoration: none;
+  padding: 10px;
+}
+
 #minecraft {
   grid-area: minecraft;
-  background-image: url("../images/english-adventures.png");
+  background-image: url("../images/adventures.png");
 }
 
 #examlift {
@@ -190,6 +227,7 @@ p {
 }
 
 .workgridArea {
+  position: relative;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -197,15 +235,15 @@ p {
   cursor: pointer;
   display: grid;
   align-content: end;
+  border: solid var(--crystal);cdgit 
 }
 /*footer styling */
 
-.details {
-  padding-left: 30px;
-  border-left: solid var(--greyhound);
+/* .details {
   align-items: center;
-  justify-content: space-between;
-}
+  justify-content: space-evenly;
+  justify-items: space-evenly;
+} */
 
 .details ul {
   display: flex;
@@ -214,10 +252,12 @@ p {
   padding: 0px;
   align-items: center;
   margin-right: 20px;
+  justify-content: space-evenly;
 }
 
 .details ul li {
   margin-right: 20px;
+
 }
 
 .details ul li a {
