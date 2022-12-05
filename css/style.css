@@ -153,7 +153,6 @@ img {
 
 #greeting h3 {
   font-weight: 300;
-  display: inline-block;
   text-align: center;
   padding-right: 5px;
   padding-left: 5px;
@@ -335,4 +334,61 @@ h2 {
     margin: 0px;
     padding: 15px;
   }
+
+  .hero-banner {
+    display: flex;
+    height: 200px;
+    width: 100%;
+    margin-bottom: 25px;
+    background-image: url("../images/antelope-canyon.jpg");
+    background-size: cover;
+    background-position: center;
+    justify-content: center;
+    align-items: flex-end;
+  }
+  
+
+  .page-section {
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .bio, #workgrid, .details {
+    padding-top: 30px;
+    padding-left: 0;
+    border-left: none;
+    border-top: solid var(--greyhound);
+    width: 90%;
+  }
+  
+
+    #workgrid {
+      
+      grid-template-rows: 300px 300px 300px 300px 300px;
+      grid-template-columns: 100%;
+      grid-template-areas:
+      "minecraft"
+      "examlift"
+      "upskill"
+      "prework"
+      "refactor"
+  
+    }
+
+
+
+/*footer styling */
+
+
+.details ul {
+  align-items: center;
+  margin-right: 0;
+  flex-direction: column;
+}
+
+.details ul li {
+  margin-right: 0px;
+
+}
+
 }
