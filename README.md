@@ -30,7 +30,7 @@ It will be used to showcase my work and projects as a developer.
 
 The source code and the original asset files were provided by [Trilogy Education](https://2u.com/) as part of the Front End Web Development bootcamp sponsored by the [Skills For Life](https://skillsforlife.edx.org/) program.
 
-The hero images are my own, photographed in Antelope Canyon, AZ, and Israel.
+The hero images are my own, photographed in [Antelope Canyon, AZ](https://www.antelopecanyon.com/), and [Ein Gedi](https://en.wikipedia.org/wiki/Ein_Gedi) in Israel.
 
 The image showcasing my development work on [Adventures in English with Cambridge](https://education.minecraft.net/en-us/lessons/english-adventures) belong to [Cambridge University Press & Assessment](https://www.cambridge.org/).
 
