@@ -13,6 +13,10 @@ It was built to fit wider and smaller screens by implementing responsive design 
 Allowing the application to render as follows on wider screens:
 ![Wide screen](./images/desktop.png)
 
+On medium-size screens:
+
+![Tablet screen](./images/tablet.png)
+
 And on smaller screens:
 
 ![Mobile screen](./images/mobile.png)
