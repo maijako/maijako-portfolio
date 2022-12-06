@@ -152,7 +152,7 @@ img {
 }
 
 #greeting h3 {
-  font-weight: 300;
+  font-weight: 500;
   text-align: center;
   padding-right: 5px;
   padding-left: 5px;
@@ -311,7 +311,7 @@ h2 {
 
 
 
-/* responsive screens */
+/* responsive screens mobile */
 @media only screen and (max-width: 600px) {
   .flexbox {
     flex-direction: column;
@@ -330,28 +330,42 @@ h2 {
     padding-bottom: 20px;
   }
 
+
+  
+
   nav ul {
     margin: 0px;
     padding: 15px;
   }
 
   .hero-banner {
-    display: flex;
+    flex-direction: column;
     height: 200px;
     width: 100%;
-    margin-bottom: 25px;
-    background-image: url("../images/antelope-canyon.jpg");
-    background-size: cover;
-    background-position: center;
     justify-content: center;
-    align-items: flex-end;
+    align-items: center;
   }
-  
+
+  img {
+    width: 120px;
+  }
+
+  #greeting h3 {
+    margin-right: 0;
+  }
 
   .page-section {
-    justify-content: center;
+    justify-content: left;
     flex-direction: column;
-  }
+    justify-items: left;
+    align-items: left;
+    }
+
+    /* h2 {
+      text-align: left;
+      
+    } */
+  
 
   .bio, #workgrid, .details {
     padding-top: 30px;
@@ -359,12 +373,16 @@ h2 {
     border-left: none;
     border-top: solid var(--greyhound);
     width: 90%;
+    /* justify-content: left;
+    text-align: left;
+    align-items: left; */
+    
   }
   
 
     #workgrid {
       
-      grid-template-rows: 300px 300px 300px 300px 300px;
+      grid-template-rows: 200px 200px 200px 200px 200px;
       grid-template-columns: 100%;
       grid-template-areas:
       "minecraft"
@@ -372,23 +390,20 @@ h2 {
       "upskill"
       "prework"
       "refactor"
-  
+
     }
 
+      .details ul {
+        align-items: left;
+        justify-items: left;
+        justify-content: left;
+        margin-right: 0;
+        flex-direction: column;
+      }
 
-
-/*footer styling */
-
-
-.details ul {
-  align-items: center;
-  margin-right: 0;
-  flex-direction: column;
-}
-
-.details ul li {
-  margin-right: 0px;
-
-}
+      .details ul li {
+        margin-right: 0px;
+     
+      }
 
 }
