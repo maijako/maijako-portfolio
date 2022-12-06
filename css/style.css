@@ -149,6 +149,9 @@ nav ul li a:hover::before {
 
 img {
   width: 150px;
+  border: solid;
+  border-color: var(--crystal);
+  border-radius: 50%;
 }
 
 #greeting h3 {
