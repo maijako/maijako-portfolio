@@ -266,8 +266,6 @@ h2 {
   }
 
 /*footer styling */
-
-
 .details ul {
   display: flex;
   list-style-type: none;
@@ -361,10 +359,6 @@ h2 {
     align-items: left;
     }
 
-    /* h2 {
-      text-align: left;
-      
-    } */
   
 
   .bio, #workgrid, .details {
@@ -373,10 +367,6 @@ h2 {
     border-left: none;
     border-top: solid var(--greyhound);
     width: 90%;
-    /* justify-content: left;
-    text-align: left;
-    align-items: left; */
-    
   }
   
 
@@ -394,11 +384,73 @@ h2 {
     }
 
       .details ul {
-        align-items: left;
-        justify-items: left;
-        justify-content: left;
         margin-right: 0;
         flex-direction: column;
+      }
+
+      .details ul li {
+        margin-right: 0px;
+     
+      }
+
+}
+
+/* responsive screens tablet */
+@media only screen and (max-width: 979px) {
+  .flexbox {
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding-top: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+  }
+
+  h1 {
+    width: 100%;
+    text-align: center;
+    padding-right: 0px;
+    padding-left: 0px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  nav ul {
+    margin: 0px;
+    padding: 15px;
+  }
+
+
+  .page-section {
+    flex-direction: column;
+   
+    }
+
+  
+
+  .bio, #workgrid, .details {
+    padding-top: 30px;
+    padding-left: 0;
+    border-left: none;
+    border-top: solid var(--greyhound);
+    width: 90%;
+  }
+  
+
+    #workgrid {
+      
+      grid-template-rows: 200px 200px 200px 200px 200px;
+      grid-template-columns: 100%;
+      grid-template-areas:
+      "minecraft"
+      "examlift"
+      "upskill"
+      "prework"
+      "refactor"
+
+    }
+
+      .details ul {
+        margin-right: 0;
       }
 
       .details ul li {
