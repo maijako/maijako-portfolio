@@ -72,7 +72,7 @@ p {
 h1 {
   font-weight: 600;
   font-size: xx-large;
-  display: inline block;
+  display: inline-block;
   text-align: right;
   margin-left: 0px;
   padding-right: 10px;
@@ -359,7 +359,6 @@ h2 {
     justify-content: left;
     flex-direction: column;
     justify-items: left;
-    align-items: left;
     }
 
   
