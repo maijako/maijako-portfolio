@@ -10,7 +10,7 @@
 7. about me
 8. portfolio
 9. footer
-10. media query
+10. media query */
 
 
 /* variables */
@@ -39,15 +39,21 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6, 
+h7 {
   margin: 0;
   color: var(--greyhound);
 }
 
 h1,
-h3,
+/* h3, */
+h7,
 h4 {
   background-color: var(--crystal);
+}
+
+h7 {
+  background: rgba(247, 234, 173, 0.664);
 }
 
 
@@ -224,36 +230,63 @@ h2 {
   background-color: var(--crystal);
   text-decoration: none;
   color: var(--greyhound);
+  background: rgba(247, 234, 173, 0.664);
+  padding: 10px;
+}
+
+.dev {
+  position: absolute;
+  top: 10px;
+  left: 0px;
+  background-color: var(--crystal);
+  text-decoration: none;
+  background: rgba(124, 64, 24, 0.664);
+  padding: 10px;
+}
+
+.white {
+  color: white;
+}
+
+.lxd {
+  position: absolute;
+  top: 10px;
+  left: 0px;
+  background-color: var(--crystal);
+  text-decoration: none;
+  background: rgba(218, 216, 80, 0.664);
   padding: 10px;
 }
 
 #minecraft {
   grid-area: minecraft;
-  background-image: url("../images/adventures.png");
+  background-image: url("../images/focus-pilot.PNG");
 }
 
 #examlift {
   grid-area: examlift;
-  background-image: url("../images/02-portfolio-1.jpg");
+  background-image: url("../images/adventures.png");
 }
 
 #upskill {
   grid-area: upskill;
-  background-image: url("../images/02-portfolio-2.jpg");
+  background-image: url("../images/exam-lift-fb.jpg");
 }
 
 #prework {
   grid-area: prework;
-  background-image: url("../images/02-portfolio-3.jpg");
+  background-image: url("../images/weather-demo.png");
 }
 
 #refactor {
   grid-area: refactor;
-  background-image: url("../images/02-portfolio-4.jpg");
+  background-image: url("../images/code-quiz.gif");
 }
 
-#workgrid a:hover {
+ a:hover {
   border-color: var(--light);
+  /* transform: scale(1.1); */
+  border-width: 4px;
 }
 
 .workgridArea {
@@ -266,6 +299,7 @@ h2 {
   display: grid;
   align-content: end;
   border: solid var(--crystal);
+  border-radius: 1%;
   }
 
 /*footer styling */
